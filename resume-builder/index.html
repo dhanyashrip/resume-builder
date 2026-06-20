@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATS Resume Builder</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>ATS Resume Builder</h1>
+
+    <div class="creator">
+        <p><strong>Dhanyashri Parande</strong></p>
+        <p>Email:dhanyashriparande28@gmail.com</p>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="form-container">
+
+        <h2>Resume Details</h2>
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <input type="text" id="address" placeholder="Address">
+
+        <textarea id="summary" placeholder="Professional Summary"></textarea>
+
+        <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+
+        <textarea id="education" placeholder="Education"></textarea>
+
+        <textarea id="projects" placeholder="Projects"></textarea>
+
+        <textarea id="experience" placeholder="Experience"></textarea>
+
+        <textarea id="certifications" placeholder="Certifications"></textarea>
+
+        <button onclick="generateResume()">
+            Generate Resume
+        </button>
+
+        <button onclick="downloadPDF()">
+            Download PDF
+        </button>
+
+        <a href="https://digitalheroesco.com"
+       target="_blank"
+       class="hero-btn">
+       Built for Digital Heroes
+    </a>
+
+    </div>
+
+    <div class="preview-container">
+
+        <div id="resume">
+
+            <h2>Resume Preview</h2>
+
+            <p>Fill details and click Generate Resume</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
